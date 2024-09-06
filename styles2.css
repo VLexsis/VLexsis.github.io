@@ -1,6 +1,5 @@
-body {
-    min-width: 768px;
-    min-height: 1024px;
+body, html {
+    height: 100%;
     background: rgb(255, 255, 255);
     position: relative;
     font-family: TT Lakes;
@@ -10,7 +9,7 @@ body {
 .main {
     position: absolute;
     width: 320px;
-    height: 1024px;
+    min-height: 500px;
     left: 0;
     right: 0;
     top: 0;
@@ -46,7 +45,7 @@ body {
 .section {
     position: absolute;
     width: 235px;
-    height: 876px;
+    min-height: 400px;
     left: 0%;
     right: 69.4%;
     top: 11.33%;
@@ -111,7 +110,7 @@ body {
 .contact {
     position: absolute;
     width: 187px;
-    height: 124px;
+    min-height: 120px;
     left: 24px;
     bottom: 64px;
 }
@@ -222,4 +221,126 @@ body {
     width: 187px;
     height: 32px;
     white-space: nowrap;
+}
+
+
+@media (max-height: 730px) {
+
+    .contact {
+        width: 187px;
+        position: absolute;
+        height: 100px;
+        left: 24px;
+        bottom: 14px;
+    }
+    
+    .call {
+        position: absolute;
+        left: 0;
+        top: 7px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .chat {
+        position: absolute;
+        top: 7px;
+        left: 56px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .profile {
+        position: absolute;
+        top: 7px;
+        right: 35px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .mail {
+        position: absolute;
+        width: 110px;
+        height: 24px;
+        top: 56px;
+        color: rgb(27, 28, 33);
+        font-family: TT Lakes;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-align: left;
+    }
+    
+    .lang {
+        position: absolute;
+        width: 90px;
+        height: 22px;
+        left: 24px;
+        bottom: 0;
+    }
+    
+    .lang__ru {
+        position: absolute;
+        width: 22px;
+        height: 24px;
+        top: 0;
+        left: 0;
+        color: rgb(126, 126, 130);
+        font-family: TT Lakes;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-align: left;
+    }
+    
+    .lang__en {
+        position: absolute;
+        top: 0;
+        left: 32px;
+        height: 22px;
+        width: 24px;
+        color: rgb(27, 28, 33);
+        font-family: TT Lakes;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-align: left;
+    
+    }
+    
+    .lang__ch {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        color: rgb(27, 28, 33);
+        font-family: TT Lakes;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-align: left;
+    
+    }
+    
+    .number {
+        position: absolute;
+        top: 80px;
+        color: rgb(27, 28, 33);
+        font-family: TT Lakes;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        text-align: left;
+        width: 187px;
+        height: 32px;
+        white-space: nowrap;
+    }
+
+
 }
